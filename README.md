@@ -7,4 +7,3 @@ a little preview of how I design websites
 
 ![](images/website2.png)
 
-![](images/website3.png)
