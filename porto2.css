@@ -106,7 +106,7 @@ h2 {
 }
 
 button {
-    position: absolute;
+   /*  position: absolute; */
     padding: 8px 20px;
     width: 180px;
     bottom: 55px;
@@ -157,6 +157,16 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#bottomContainer {
+    bottom: 50px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #form {
@@ -246,7 +256,7 @@ spanD {
 }
 
 #btnLogin {
-    font-size: 76px;
+    font-size: 72px;
 }
 
 #footerLine {
@@ -268,16 +278,55 @@ spanD {
 
 }
 
-
-@media screen and (max-width: 1100px) {
-    
-    #slika {
-        display: none;
+@media screen and (max-width: 1300px) {
+    #image {
+        width: 500px;
+        margin-left: 0;
     }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #btnLogin {
+        font-size: 60px;
+    }
+
+    spanB, spanC {
+        font-size: 28px;
+    }
+    
+    #container {
+        height: 1300px;
+    }
+
+    /* #slika {
+        display: none;
+    } */
     
     #list {
         font-size: 30px;
         text-align: center;
+    }
+
+    #form {
+        width: 500px;
+        margin: 0;
+        border-radius: 80px;
+    }
+
+    button {
+        left: 155px;
+    }
+
+    #image {
+        width: 400px;
+        margin-left: 0;
+    }
+
+    #middleContainer {
+        height: 1000px;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -302,6 +351,10 @@ spanD {
        justify-content: center;
     }
 
+    spanB {
+        font-size: 24px;
+    }
+
     #list {
         flex-direction: column;
         grid-gap: 10px;
@@ -315,23 +368,63 @@ spanD {
 }
 
 
+@media screen and (max-width: 700px) {
+    
+    #form {
+        /* margin: 0; */
+        width: 400px;
+    }
+
+    .classInput {
+        padding: 8px 0;
+    }
+
+    button {
+        left: 105px;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
 
     #wordWrap {
-        padding: 40px;
-        font-size: 64px;
+        padding: 36px;
+       /*  font-size: 64px; */
     }
 }
 
 
 @media screen and (max-width: 399px) {
+    
+    #container {
+        height: 900px;
+    }
+
+    #image {
+        width: 320px;
+    }
 
     #wordWrap {
-        font-size: 48px;
+        font-size: 35px;
         padding-bottom: 0;
+    }
+
+    #form {
+        margin: 0;
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    #btnLogin {
+        font-size: 48px;
     }
 
     span {
         display: none;
+    }
+
+    button {
+        left: 25%;
+        
     }
 }

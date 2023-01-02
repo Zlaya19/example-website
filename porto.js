@@ -13,7 +13,7 @@ let counter = '';
 
 
 class Korisnik {
-    constructor(id, ime, prezime, adresa, telefon, eMail, zanimanje/* njemacki,  BHS,*/ ) {
+    constructor(id, ime, prezime, adresa, telefon, eMail, zanimanje, njemacki, BHS, ) {
         this.id = id;
         this.ime = ime;
         this.prezime = prezime;
@@ -21,8 +21,8 @@ class Korisnik {
         this.telefon = telefon;
         this.eMail = eMail;
         this.zanimanje = zanimanje;
-        /* this.njemacki = njemacki; */
-        /* this.BHS = BHS; */
+        this.njemacki = njemacki;
+        this.BHS = BHS;
     }
 }
 
@@ -33,9 +33,7 @@ function getText() {
     
     counter++;
     let korisnik1 = new Korisnik(counter, ime.value, prezime.value, adresa.value,
-                        telefon.value, eMail.value, zanimanje.value);
-
-                        console.log(njemacki.value, BHS.value)
+                        telefon.value, eMail.value, zanimanje.value, njemacki.value, BHS.value);
 
     console.log(korisnik1);
 }
